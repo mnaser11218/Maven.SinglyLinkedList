@@ -24,45 +24,40 @@ public class SinglyLinkedListTest {
     @Test
     public void testAddMethodLinkedList(){
         SinglyLinkedList sll = new SinglyLinkedList();
-        SinglyLinkedList.ListNode head = new SinglyLinkedList.ListNode(1);
-        SinglyLinkedList.ListNode nodeTwo = new SinglyLinkedList.ListNode(2);
-        SinglyLinkedList.ListNode nodeThree = new SinglyLinkedList.ListNode(3);
+//        SinglyLinkedList.ListNode head = new SinglyLinkedList.ListNode(1);
+//        SinglyLinkedList.ListNode nodeTwo = new SinglyLinkedList.ListNode(2);
+//        SinglyLinkedList.ListNode nodeThree = new SinglyLinkedList.ListNode(3);
 //        head.next = nodeTwo;
 //        nodeTwo.next = nodeThree;
-        sll.add(head);
-        sll.add(nodeTwo);
-        sll.add(nodeThree);
+        sll.add(1);
+        sll.add(2);
+        sll.add(3);
 
-        Assert.assertEquals(nodeTwo, head.next);
-        Assert.assertEquals(nodeThree, nodeTwo.next);
+        Assert.assertEquals(2, sll.get(1));
+      //  Assert.assertEquals(nodeThree, nodeTwo.next);
     }
 
     @Test
     public void testContainsMethodLinkedList(){
         SinglyLinkedList sll = new SinglyLinkedList();
-        SinglyLinkedList.ListNode head = new SinglyLinkedList.ListNode(1);
-        SinglyLinkedList.ListNode nodeTwo = new SinglyLinkedList.ListNode(2);
-        SinglyLinkedList.ListNode nodeThree = new SinglyLinkedList.ListNode(3);
-//        head.next = nodeTwo;
-//        nodeTwo.next = nodeThree;
-        sll.add(head);
-        sll.add(nodeTwo);
-        sll.add(nodeThree);
-        boolean expected = sll.contains(3);
 
-        Assert.assertEquals(nodeTwo, head.next);
-        Assert.assertEquals(nodeThree, nodeTwo.next);
+        sll.add(1);
+        sll.add(2);
+        sll.add(3);
+        boolean expected = sll.contains(56);
+        boolean expected1 = sll.contains(1);
+
+
+        Assert.assertEquals(false, expected);
+        Assert.assertEquals(true,expected1 );
     }
 
     @Test
     public void testSizeMethodLinkedList(){
         SinglyLinkedList sll = new SinglyLinkedList();
-        SinglyLinkedList.ListNode head = new SinglyLinkedList.ListNode(1);
-        SinglyLinkedList.ListNode nodeTwo = new SinglyLinkedList.ListNode(2);
-        SinglyLinkedList.ListNode nodeThree = new SinglyLinkedList.ListNode(3);
-        sll.add(head);
-        sll.add(nodeTwo);
-        sll.add(nodeThree);
+        sll.add(1);
+        sll.add(2);
+        sll.add(3);
         int expected = sll.size();
 
         Assert.assertEquals(3, expected);
@@ -72,25 +67,86 @@ public class SinglyLinkedListTest {
     @Test
     public void testGetMethodLinkedList(){
         SinglyLinkedList sll = new SinglyLinkedList();
-        SinglyLinkedList.ListNode head = new SinglyLinkedList.ListNode(1);
-        SinglyLinkedList.ListNode nodeTwo = new SinglyLinkedList.ListNode(2);
-        SinglyLinkedList.ListNode nodeFour = new SinglyLinkedList.ListNode(45);
-        SinglyLinkedList.ListNode nodeFive = new SinglyLinkedList.ListNode(47);
-        SinglyLinkedList.ListNode nodeSix = new SinglyLinkedList.ListNode(498);
-        SinglyLinkedList.ListNode nodeSeven = new SinglyLinkedList.ListNode(41);
-        SinglyLinkedList.ListNode nodeEight = new SinglyLinkedList.ListNode(467);
-
-        sll.add(head);
-        sll.add(nodeTwo);
-        sll.add(nodeFour);
-        sll.add(nodeFive);
-        sll.add(nodeSix);
-        sll.add(nodeSeven);
-        sll.add(nodeEight);
+        sll.add(32);
+        sll.add(234);
+        sll.add(3411);
+        sll.add(352);
+        sll.add(5467);
+        sll.add(542);
+        sll.add(231);
         int expected = sll.get(4);
 
-        Assert.assertEquals(498, expected);
+        Assert.assertEquals(5467, expected);
     }
+
+
+    @Test
+    public void testFindMethodLinkedList(){
+        SinglyLinkedList sll = new SinglyLinkedList();
+
+        sll.add(5);
+        sll.add(4);
+        sll.add(34);
+        sll.add(34);
+        sll.add(342);
+        sll.add(23);
+        sll.add(435);
+        int expected = sll.find(467);
+
+        Assert.assertEquals(6, expected);
+    }
+    @Test
+    public void testRemoveValueMethodLinkedList(){
+        SinglyLinkedList sll = new SinglyLinkedList();
+
+        sll.add(5);
+        sll.add(4);
+        sll.add(34);
+        sll.add(36);
+        sll.add(342);
+        sll.add(23);
+        sll.add(435);
+        sll.removeValue(5);
+        Object expected = sll.get(5);
+
+        Assert.assertEquals(435, expected);
+    }
+
+    @Test
+    public void testPrintListMethodLinkedList(){
+        SinglyLinkedList sll = new SinglyLinkedList();
+
+        sll.add(5);
+        sll.add(4);
+        sll.add(34);
+        sll.add(36);
+        sll.add(342);
+        sll.add(23);
+        sll.add(435);
+        sll.removeValue(2);
+       sll.printNodesInListnode();
+    }
+
+//    copy -- returns a new linked list containing the same values (look up deep versus shallow copy)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//    sort -- sorts the list using your algorithm of choice.
+//    You must perform the sorting yourself (no fair using someone else's library)
+
+
+
 
 
 
