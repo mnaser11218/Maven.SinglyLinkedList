@@ -1,5 +1,7 @@
 package com.zipcodewilmington.singlylinkedlist;
 
+import org.w3c.dom.NodeList;
+
 import java.util.List;
 
 /**
@@ -136,6 +138,52 @@ public class SinglyLinkedList {
         }
 
     }
+
+    public SinglyLinkedList copy(){
+        SinglyLinkedList newList = new SinglyLinkedList();
+        int count = 0;
+        if(this.head == null){
+            return newList;
+        }
+
+        ListNode current = this.head;
+
+        while(current.next != null){
+            newList.add(current.data);
+            current = current.next;
+            count++;
+        }
+        return newList;
+    }
+
+
+    public void sort(){
+
+        ListNode current = head, index = null;
+        int temp;
+
+        if(head == null) {
+            return;
+        }
+        else {
+            while(current != null) {
+                //Node index will point to node next to current
+                index = current.next;
+
+                while(index != null) {
+                    //If current node's data is greater than index's node data, swap the data between them
+                    if(current.data > index.data) {
+                        temp = current.data;
+                        current.data = index.data;
+                        index.data = temp;
+                    }
+                    index = index.next;
+                }
+                current = current.next;
+            }
+
+        }
+    };
 
 
     public void printNodesInListnode() {

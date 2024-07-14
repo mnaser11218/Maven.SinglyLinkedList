@@ -24,17 +24,11 @@ public class SinglyLinkedListTest {
     @Test
     public void testAddMethodLinkedList(){
         SinglyLinkedList sll = new SinglyLinkedList();
-//        SinglyLinkedList.ListNode head = new SinglyLinkedList.ListNode(1);
-//        SinglyLinkedList.ListNode nodeTwo = new SinglyLinkedList.ListNode(2);
-//        SinglyLinkedList.ListNode nodeThree = new SinglyLinkedList.ListNode(3);
-//        head.next = nodeTwo;
-//        nodeTwo.next = nodeThree;
         sll.add(1);
         sll.add(2);
         sll.add(3);
 
         Assert.assertEquals(2, sll.get(1));
-      //  Assert.assertEquals(nodeThree, nodeTwo.next);
     }
 
     @Test
@@ -91,9 +85,9 @@ public class SinglyLinkedListTest {
         sll.add(342);
         sll.add(23);
         sll.add(435);
-        int expected = sll.find(467);
+        int expected = sll.find(342);
 
-        Assert.assertEquals(6, expected);
+        Assert.assertEquals(4, expected);
     }
     @Test
     public void testRemoveValueMethodLinkedList(){
@@ -128,22 +122,44 @@ public class SinglyLinkedListTest {
     }
 
 //    copy -- returns a new linked list containing the same values (look up deep versus shallow copy)
+@Test
+public void testCopyMethodLinkedList(){
+    SinglyLinkedList sll = new SinglyLinkedList();
+
+    sll.add(5);
+    sll.add(4);
+    sll.add(34);
+    sll.add(36);
+    sll.add(342);
+    sll.add(23);
+    sll.add(435);
+    //sll.removeValue(2);
+    //sll.printNodesInListnode();
+    SinglyLinkedList newList =  sll.copy();
+   newList.printNodesInListnode();
+   // this should be false.
+   Assert.assertNotEquals(newList, sll);
+   Assert.assertEquals(newList.get(1), sll.get(1));
+}
 
 
 
 
 
+    @Test
+    public void testSortMethodLinkedList(){
+        SinglyLinkedList sll = new SinglyLinkedList();
 
-
-
-
-
-
-
-
-
-//    sort -- sorts the list using your algorithm of choice.
-//    You must perform the sorting yourself (no fair using someone else's library)
+        sll.add(8);
+        sll.add(4);
+        sll.add(374);
+        sll.add(36);
+        sll.add(342);
+        sll.add(23);
+        sll.add(435);
+        sll.sort();
+        sll.printNodesInListnode();
+    }
 
 
 

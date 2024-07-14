@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="4f0c6f35-1ac5-49ea-b41e-20445c07c5c6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/MainApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zipcodewilmington/singlylinkedlist/SinglyLinkedListTest.java" afterDir="false" />
     </list>
@@ -225,13 +224,17 @@
   "keyToString": {
     "Application.MainApplication.executor": "Run",
     "Application.SinglyLinkedList.executor": "Run",
+    "JUnit.SinglyLinkedListTest.executor": "Run",
     "JUnit.SinglyLinkedListTest.testAddMethodLinkedList.executor": "Run",
     "JUnit.SinglyLinkedListTest.testContainsMethodLinkedList.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testCopyMethodLinkedList.executor": "Run",
     "JUnit.SinglyLinkedListTest.testFindMethodLinkedList.executor": "Run",
     "JUnit.SinglyLinkedListTest.testGetMethodLinkedList.executor": "Run",
     "JUnit.SinglyLinkedListTest.testLinkedList.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testPrintListMethodLinkedList.executor": "Run",
     "JUnit.SinglyLinkedListTest.testRemoveValueMethodLinkedList.executor": "Run",
     "JUnit.SinglyLinkedListTest.testSizeMethodLinkedList.executor": "Run",
+    "JUnit.SinglyLinkedListTest.testSortMethodLinkedList.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
@@ -239,7 +242,7 @@
     "last_opened_file_path": "/Users/mohammed/ZipCodeLabs/Maven.SinglyLinkedList"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.SinglyLinkedListTest.testPrintListMethodLinkedList">
+  <component name="RunManager" selected="JUnit.SinglyLinkedListTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -329,7 +332,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.testAddMethodLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -339,14 +342,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="testAddMethodLinkedList" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.testContainsMethodLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.testCopyMethodLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -356,7 +358,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="testContainsMethodLinkedList" />
+      <option name="METHOD_NAME" value="testCopyMethodLinkedList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -397,7 +399,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SinglyLinkedListTest.testSizeMethodLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SinglyLinkedListTest.testSortMethodLinkedList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="singlylinkedlist" />
       <extension name="coverage">
         <pattern>
@@ -407,7 +409,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.zipcodewilmington.singlylinkedlist" />
       <option name="MAIN_CLASS_NAME" value="com.zipcodewilmington.singlylinkedlist.SinglyLinkedListTest" />
-      <option name="METHOD_NAME" value="testSizeMethodLinkedList" />
+      <option name="METHOD_NAME" value="testSortMethodLinkedList" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
@@ -438,11 +440,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SinglyLinkedListTest" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.testSortMethodLinkedList" />
+        <item itemvalue="JUnit.SinglyLinkedListTest.testCopyMethodLinkedList" />
         <item itemvalue="JUnit.SinglyLinkedListTest.testPrintListMethodLinkedList" />
         <item itemvalue="JUnit.SinglyLinkedListTest.testRemoveValueMethodLinkedList" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.testSizeMethodLinkedList" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.testContainsMethodLinkedList" />
-        <item itemvalue="JUnit.SinglyLinkedListTest.testAddMethodLinkedList" />
       </list>
     </recent_temporary>
   </component>
